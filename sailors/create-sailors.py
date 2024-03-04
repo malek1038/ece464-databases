@@ -5,47 +5,48 @@ Create a Sailors and Boats dataset in Python
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine('sqlite:///sailors.db',echo = True)
+engine = create_engine('sqlite:///C:/Users/malek/Desktop/eceProj1/sqlite-tools-win-x64-3450100/sailors.db', echo=True)
+
 
 Session = sessionmaker(bind = engine)
 session = Session()
 
 sailors = [
-	(22,"dusting",7,45.0),
-	(23,"emilio",7,45.0),
-	(24,"scruntus",1,33.0),
-	(29,"brutus",1,33.0),
-	(31,"lubber",8,55.5),
-	(32,"andy",8,25.5),
-	(35,"figaro",8,55.5),
-	(58,"rusty",10,35),
-	(59,"stum",8,25.5),
-	(60,"jit",10,35),
-	(61,"ossola",7,16),
-	(62,"shaun",10,35),
-	(64,"horatio",7,16),
-	(71,"zorba",10,35),
-	(74,"horatio",9,25.5),
-	(85,"art",3,25.5),
-	(88,"kevin",3,25.5),
-	(89,"will",3,25.5),
-	(90,"josh",3,25.5),
-	(95,"bob",3,63.5),
+INSERT INTO sailors VALUES	(22,"dusting",7,45.0);
+INSERT INTO sailors VALUES	(23,"emilio",7,45.0);
+INSERT INTO sailors VALUES	(24,"scruntus",1,33.0);
+INSERT INTO sailors VALUES	(29,"brutus",1,33.0);
+INSERT INTO sailors VALUES	(31,"lubber",8,55.5);
+INSERT INTO sailors VALUES	(32,"andy",8,25.5);
+INSERT INTO sailors VALUES	(35,"figaro",8,55.5);
+INSERT INTO sailors VALUES	(58,"rusty",10,35);
+INSERT INTO sailors VALUES	(59,"stum",8,25.5);
+INSERT INTO sailors VALUES	(60,"jit",10,35);
+INSERT INTO sailors VALUES	(61,"ossola",7,16);
+INSERT INTO sailors VALUES	(62,"shaun",10,35);
+INSERT INTO sailors VALUES	(64,"horatio",7,16);
+INSERT INTO sailors VALUES	(71,"zorba",10,35);
+INSERT INTO sailors VALUES	(74,"horatio",9,25.5);
+INSERT INTO sailors VALUES	(85,"art",3,25.5);
+INSERT INTO sailors VALUES	(88,"kevin",3,25.5);
+INSERT INTO sailors VALUES	(89,"will",3,25.5);
+INSERT INTO sailors VALUES	(90,"josh",3,25.5);
+INSERT INTO sailors VALUES	(95,"bob",3,63.5);
 ]
 
 boats = [
-	(101,Interlake,blue,45),
-	(102,Interlake,red,45),
-	(103,Clipper,green,40),
-	(104,Clipper,red,40),
-	(105,Marine,red,35),
-	(106,Marine,green,35),
-	(107,Marine,blue,35),
-	(108,Driftwood,red,35),
-	(109,Driftwood,blue,35),
-	(110,Klapser,red,30),
-	(111,Sooney,green,28),
-	(112,Sooney,red,28),
+	(101,"Interlake","blue",45),
+	(102,"Interlake","red",45),
+	(103,"Clipper","green",40),
+	(104,"Clipper","red",40),
+	(105,"Marine","red",35),
+	(106,"Marine","green",35),
+	(107,"Marine","blue",35),
+	(108,"Driftwood","red",35),
+	(109,"Driftwood","blue",35),
+	(110,"Klapser","red",30),
+	(111,"Sooney","green",28),
+	(112,"Sooney","red",28),
 ]
 
 reserves = [
